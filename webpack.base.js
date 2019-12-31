@@ -127,7 +127,7 @@ module.exports = {
             use: ["babel-loader"]
         }),
         new webpack.DefinePlugin({
-            FLAG: JSON.stringify(process.env.mode)
+            ENV_MODE: JSON.stringify(process.env.mode)
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css',
